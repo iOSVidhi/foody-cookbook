@@ -7,7 +7,7 @@ This iOS Food App will provide help and recipes for the people who love to cook.
 2. Make a search section for the user to find food.
     * That is a search bar or a tab for users to find delicious food they want.
 3. Keep a section to store Favourite Food.
-    * SO that user can mark their favorite food item they found in the app
+    * So that user can mark their favorite food item they found in the app.
 
 # Screenshots
 | Dark  | Light |
