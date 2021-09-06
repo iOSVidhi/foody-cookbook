@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodCollectionViewCell" id="Ueb-df-B1Q" customClass="FoodCollectionViewCell" customModule="FoodyCookBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wA0-gs-buP">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VEY-u7-6fs">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="ROP-kD-RUO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHZ-qR-fAF">
+                        <rect key="frame" x="0.0" y="110" width="160" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NHZ-qR-fAF" firstAttribute="top" secondItem="VEY-u7-6fs" secondAttribute="bottom" constant="10" id="1AF-hk-vOx"/>
+                    <constraint firstAttribute="trailing" secondItem="NHZ-qR-fAF" secondAttribute="trailing" id="KJU-Yf-lcx"/>
+                    <constraint firstItem="VEY-u7-6fs" firstAttribute="leading" secondItem="wA0-gs-buP" secondAttribute="leading" id="Rxz-oR-bfC"/>
+                    <constraint firstItem="VEY-u7-6fs" firstAttribute="top" secondItem="wA0-gs-buP" secondAttribute="top" id="WwL-Dg-BK5"/>
+                    <constraint firstAttribute="trailing" secondItem="VEY-u7-6fs" secondAttribute="trailing" id="eUx-bo-sco"/>
+                    <constraint firstItem="NHZ-qR-fAF" firstAttribute="leading" secondItem="wA0-gs-buP" secondAttribute="leading" id="zce-pe-X33"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="imageViewFood" destination="VEY-u7-6fs" id="LZe-5A-0D2"/>
+                <outlet property="labelFoodDetail" destination="NHZ-qR-fAF" id="KDd-qw-RG7"/>
+            </connections>
+            <point key="canvasLocation" x="-268" y="0.0"/>
+        </collectionViewCell>
+    </objects>
+</document>
